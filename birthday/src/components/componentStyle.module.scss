@@ -1,0 +1,125 @@
+// Définir les couleurs et autres variables et les fonts
+@font-face {
+  font-family: 'Bison';
+  src: url('../Bison-Bold\(PersonalUse\).ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+$couleur-principale: #DF80AC;
+$couleur-texte: #000;
+$couleur-citation: #fff;
+$font-texte: 'Bison', sans-serif;
+
+.nav {
+  background-color: $couleur-citation;
+  height: 100px;
+  padding: 0 22px;
+  position: relative;
+  top: 0;
+  color: $couleur-texte;
+  font-family: Bison;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date, .titre {
+  font-family: $font-texte;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.045em;
+}
+
+.bas {
+  display: flex;
+}
+
+.gauche, .droite {
+  width: 50%;
+  height: 89vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.gauche {
+  background-color: $couleur-principale;
+}
+
+.anniv {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  background-color: $couleur-principale;
+}
+
+
+
+.citation {
+  background-color: $couleur-citation;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.citationTexte {
+  font-family: $font-texte;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.045em;
+  text-align: left;
+  
+
+  color: $couleur-texte;
+}
+
+.name {
+  font-family: 'Bison', sans-serif;
+  font-size: 95px;
+  font-weight: 400;
+  line-height: 114px;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+
+.star {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  top: 167px;
+  left: 66px;
+  border: 3px;
+}
+
+.star1 {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  top: 295px;
+  left: 750px;
+  border: 3px;
+}
+
+.star2 {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  top: 538px;
+  left: 84px;
+  border: 3px;
+}
+
+.trait {
+  margin: 0;
+  border-width: 2px;
+}
