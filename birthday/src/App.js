@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+// import logo from './gif.svg';
 import './App.css';
+import ComposantUn from './components/componentUn';
+import ComposantDeux from './components/componentDeux';
+import ComposantTrois from './components/componentTrois';
+import styles from './components/componentStyle.module.scss';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <ComposantUn></ComposantUn>
+        <hr className={styles.trait}></hr>
+        <div className={styles.bas}>
+        <ComposantTrois></ComposantTrois>
+        <ComposantDeux ></ComposantDeux>
+        </div>
       </header>
-    </div>
   );
 }
 
